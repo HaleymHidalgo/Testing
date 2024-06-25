@@ -3,6 +3,59 @@
 
 {% block content %}
 {% load static %}
+<!-- Carousel Section -->
+<section class="container-max section-carrusel">
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img
+                    src="{% static 'img/bg-auto.webp' %}"
+                    class="d-block img-carrucel w-50 mx-auto"
+                    alt="bg-auto"
+                />
+            </div>
+            <div class="carousel-item">
+                <img
+                    src="{% static 'img/bmw-m3-gtr.jpeg' %}"
+                    class="d-block img-carrucel w-50 mx-auto"
+                    alt="bg-bmw"
+                />
+            </div>
+            <div class="carousel-item">
+                <img
+                    src="{% static 'img/black_porsche_carrera_gt_car_4k_hd_cars-3840x2160.jpg' %}"
+                    class="d-block img-carrucel w-50 mx-auto"
+                    alt="bg-porsche"
+                />
+            </div>
+        </div>
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+        >
+            <span
+            class="carousel-control-prev-icon"
+            aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+        >
+            <span
+            class="carousel-control-next-icon"
+            aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
 <!-- About we Section -->
 <section class="seccion-cartas">
     <h2 class="titulo-seccion">Acerca de Nosotros</h2>
@@ -27,8 +80,7 @@
     <article class="parrafo-seccion">
         <h3>¿Example N°1?</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
@@ -38,8 +90,7 @@
     <article class="parrafo-seccion">
         <h3>¿Example N°2?</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
@@ -49,8 +100,7 @@
     <article class="parrafo-seccion">
         <h3>¿Example N°3?</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
@@ -58,4 +108,5 @@
         </p>
     </article>
 </section>
+
 {% endblock %}
