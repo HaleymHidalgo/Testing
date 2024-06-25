@@ -1,0 +1,115 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<!-- Carrusel -->
+<div id="carouselExampleCaptions" class="carousel slide" style="max-width: 35rem">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'bg-auto.webp' %}" class="d-block w-100" alt="Imagen promocional de autos">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Autos del Mar</h5>
+                <p>Los mejores autos al mejor precio</p>
+            </div>
+        </div>
+        <div disable class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+            </div>
+        </div>
+        <div disable class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Most Sales -->
+<section class="fondo-seccion">
+    <h1 class="titulo-seccion">Lo más vendido</h1>
+    <div class="container-fluid">
+        <div id="rowCards" class="row">
+            <!-- Aqui se añaden las cards -->
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img"
+                        src="https://dercocenter-api.s3.us-east-1.amazonaws.com/images/models/1682716203-JkRG8FACQ3.webp"
+                        alt="Nuevo S-presso"
+                    >
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nuevo S-presso</h5>
+                        <p class="card-text">Suzuki</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img"
+                        src="https://dercocenter-api.s3.us-east-1.amazonaws.com/images/models/2022-05-25-FOTOAUTO-DESCRIPCIÓN-FICHAMODELO-754X364.png"
+                        alt="Cerelio"
+                    >
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cerelio</h5>
+                        <p class="card-text">Suzuki</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img"
+                        src="https://dercocenter-api.s3.us-east-1.amazonaws.com/images/models/2021-06-25-swift-plus_754x364.png"
+                        alt="Swift"
+                    >
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Swift</h5>
+                        <p class="card-text">Suzuki</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img"
+                        src="https://dercocenter-api.s3.us-east-1.amazonaws.com/images/models/1659392017-yrZC3CplcJ.webp"
+                        alt="Dzire"
+                    >
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dzire</h5>
+                        <p class="card-text">Suzuki</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
